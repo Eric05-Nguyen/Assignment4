@@ -1,0 +1,19 @@
+
+package assignment4;
+
+import java.util.Scanner;
+
+public class B4_ag4 {
+    public static void main(String[] args) {
+        Scanner nhap = new Scanner(System.in);
+        System.out.print("n=");
+        int n = nhap.nextInt();
+        int sodao = 0;
+        while (n != 0) {
+            int cuoi = n % 10;
+            sodao = sodao * 10 + cuoi;
+            n /= 10;
+        }
+        System.out.println("So dao la = " + sodao);
+    }
+}
