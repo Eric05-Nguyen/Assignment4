@@ -1,0 +1,16 @@
+package assignment4;
+
+import java.util.Scanner;
+
+public class B2_ag4 {
+    public static void main(String[] args) {
+        Scanner nhap = new Scanner(System.in);
+        System.out.print("n = ");
+        int n = nhap.nextInt();
+        int tong = 0;
+        for (int i = 0; i <= n; i++) {
+            tong += i;
+        }
+        System.out.println("Sum = " + tong);
+    }
+}
